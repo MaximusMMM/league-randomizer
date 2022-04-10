@@ -5,15 +5,15 @@ styles = ["Tank", "Lethality", "Full AP", "Attack Speed", "Support"]
 
 def generateChamp(champFile):
     with open(champFile) as f:
-        contents_of_file = f.read()
-    lines = contents_of_file.splitlines()
+        contents = f.read()
+    lines = contents.splitlines()
     line_number = random.randrange(0, len(lines))
     return lines[line_number]
 
 def generateSynergies(tftFile):
     with open(tftFile) as f:
-        contents_of_file = f.read()
-    lines = contents_of_file.splitlines()
+        contents = f.read()
+    lines = contents.splitlines()
     line_number = random.randrange(0, len(lines))
     return lines[line_number]
 
