@@ -34,16 +34,13 @@ def startMenu():
         chooseStyle()
         champs()
         time.sleep(1)
-        startMenu()
     elif proceed == 2:
         synergies()
         time.sleep(1)
-        startMenu()
     elif proceed == 3:
         exit()
     else:
         print("Please choose one of the given options.")
-        startMenu()
 
     
 if __name__ == '__main__':
