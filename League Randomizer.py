@@ -21,7 +21,7 @@ def chooseStyle():
     choice = input("Would you like for me to choose a playstyle as well? y/n: ")
     if choice == "y":
         print("\n"+random.choice(styles))
-
+        
 def champs():
     print(generateChamp("LOLChamps.txt")+"\n")
 
@@ -34,9 +34,11 @@ def startMenu():
         chooseStyle()
         champs()
         time.sleep(1)
+        startMenu()
     elif proceed == 2:
         synergies()
         time.sleep(1)
+        startMenu()
     elif proceed == 3:
         exit()
     else:
